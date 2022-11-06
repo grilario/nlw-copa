@@ -11,8 +11,7 @@ import {
 
 import { AuthContextProvider } from "./src/context/AuthContext";
 
-import { SignIn } from "./src/screens/SignIn";
-import { Pools } from "./src/screens/Pools";
+import { Routes } from "./src/routes";
 
 import { THEME } from "./src/styles/theme";
 
@@ -49,7 +48,7 @@ export default function App() {
           translucent
         />
         <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
-          <Pools />
+          <Routes />
         </View>
       </AuthContextProvider>
     </NativeBaseProvider>
